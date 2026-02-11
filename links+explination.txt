@@ -1,0 +1,18 @@
+the links to the videos are here:
+
+
+
+and the explanation for the design section is as follows:
+
+for the design section we had to write a dataflow that connected to 
+a Pub/Sub topic and filter the messages, then post them to another
+topic. To do this, I cannibalized the code from example 4 since that
+already read from a pubsub, then I wrote a simple class and function
+that did the cleaning and conversions. I was able to basically reuse
+the producer and consumer from milestone 2 and all I had to change
+was the topics. after saving it and running it, my producer was 
+sending messages and, after a little delay, the consumer would receive
+those messages with the edits that the dataflow was doing.
+
+All the code I wrote is in this repo with the "design pubsub.py" file
+being the dataflow code that was running on GCP 
